@@ -129,8 +129,8 @@
       <?php echo form_open("auth/login");?>
       <?php if ($this->config->item('identity', 'ion_auth') != 'email') { ?>
          <div class="form-group has-feedback">
-          <label>Username/NISN</label>
-          <input type="text" name="identity" class="form-control" placeholder="Username/NISN" autofocus required />
+          <label>NISN</label>
+          <input type="text" name="identity" class="form-control" placeholder="NISN" autofocus required />
           <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
         </div>
       <?php } else { ?>

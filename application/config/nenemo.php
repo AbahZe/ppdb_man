@@ -12,8 +12,8 @@ $config['copyright'] = 'MAN 1 Model Manado';
 // ====> dev
 $config['developer'] = 'Hairul Azmi';
 $config['email'] = 'ilung82@gmail.com';
-$config['contact'] = '082184032134';
-$config['workplace'] = 'SMP Negeri 1 Tumijajar';
+$config['contact'] = '085340758787';
+$config['workplace'] = 'Man Model 1 Manado';
 $config['project'] = 'PPDB';
 $config['codename'] = 'Manado';
 $config['version'] = '2.5.0';
