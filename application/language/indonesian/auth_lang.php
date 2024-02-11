@@ -22,14 +22,14 @@ $lang['error_csrf'] = 'This form post did not pass our security checks.';
 
 // Login
 $lang['login_heading']         = 'Login';
-$lang['login_subheading']      = 'Silakan login menggunakan Email dan Kata Sandi anda.';
-$lang['login_subheading1']      = 'Silakan login menggunakan Username/NISN dan Kata Sandi anda.';
+$lang['login_subheading']      = 'Silakan login menggunakan Username/Email dan Kata Sandi anda.';
+$lang['login_subheading1']      = 'Silakan login menggunakan NISN dan Kata Sandi yang telah di daftarkan.';
 $lang['login_identity_label']  = 'Email/Username';
 $lang['login_password_label']  = 'Kata Sandi';
 $lang['login_remember_label']  = 'Ingatkan Saya';
 $lang['login_submit_btn']      = 'Login';
 $lang['login_forgot_password'] = 'Lupa Kata Sandi?';
-$lang['register_a_new_membership'] = 'Buat Akun Pengguna';
+$lang['register_a_new_membership'] = 'Daftar Disini Untuk Buat Akun Pengguna';
 
 // Index
 $lang['index_heading']           = 'Pengguna';
