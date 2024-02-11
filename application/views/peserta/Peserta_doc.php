@@ -41,6 +41,7 @@
 				<th>Nama Dusun</th>
 				<th>Nama Kelurahan</th>
 				<th>Kecamatan</th>
+				<th>Kab/Kota</th>
 				<th>Kode Pos</th>
 				<th>Latitude</th>
 				<th>Longitude</th>
@@ -78,6 +79,7 @@
 				<th>Nomor HP</th>
 				<th>Email</th>
 				<th>Jenis Ekstrakurikuler</th>
+				<th>Cita-Cita</th>
 				<th>Tinggi Badan</th>
 				<th>Berat Badan</th>
 				<th>Jarak ke sekolah</th>
@@ -125,6 +127,7 @@
 		        <td><?php echo $peserta->nama_dusun ?></td>
 		        <td><?php echo $peserta->nama_kelurahan ?></td>
 		        <td><?php echo $peserta->kecamatan ?></td>
+				<td><?php echo $peserta->kabko ?></td>
 		        <td><?php echo $peserta->kode_pos ?></td>
 		        <td><?php echo $peserta->latitude ?></td>
 		        <td><?php echo $peserta->longitude ?></td>
@@ -162,6 +165,7 @@
 		        <td><?php echo $peserta->nomor_hp ?></td>
 		        <td><?php echo $peserta->email ?></td>
 		        <td><?php echo $peserta->jenis_ekstrakurikuler ?></td>
+				<td><?php echo $peserta->cita_cita ?></td>
 		        <td><?php echo $peserta->tinggi_badan ?></td>
 		        <td><?php echo $peserta->berat_badan ?></td>
 		        <td><?php echo $peserta->jarak ?></td>

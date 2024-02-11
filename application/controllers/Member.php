@@ -54,6 +54,7 @@ class Member extends CI_Controller
 		    'nama_dusun' => set_value('nama_dusun'),
 		    'nama_kelurahan' => set_value('nama_kelurahan'),
 		    'kecamatan' => set_value('kecamatan'),
+			'kabko' => set_value('kabko'),
 		    'kode_pos' => set_value('kode_pos'),
 		    'latitude' => set_value('latitude'),
 		    'longitude' => set_value('longitude'),
@@ -91,6 +92,7 @@ class Member extends CI_Controller
 		    'nomor_hp' => set_value('nomor_hp'),
 		    'email' => set_value('email'),
 		    'jenis_ekstrakurikuler' => set_value('jenis_ekstrakurikuler'),
+			'cita_cita' => set_value('cita_cita'),
 		    'tinggi_badan' => set_value('tinggi_badan'),
 		    'berat_badan' => set_value('berat_badan'),
 		    'id_jarak' => set_value('id_jarak'),
@@ -207,6 +209,7 @@ class Member extends CI_Controller
 				'nama_dusun' => $this->input->post('nama_dusun',TRUE),
 				'nama_kelurahan' => $this->input->post('nama_kelurahan',TRUE),
 				'kecamatan' => $this->input->post('kecamatan',TRUE),
+				'kabko' => $this->input->post('kabko',TRUE),
 				'kode_pos' => $this->input->post('kode_pos',TRUE),
 				'latitude' => $this->input->post('latitude',TRUE),
 				'longitude' => $this->input->post('longitude',TRUE),
@@ -244,6 +247,7 @@ class Member extends CI_Controller
 				'nomor_hp' => $this->input->post('nomor_hp',TRUE),
 				'email' => $this->input->post('email',TRUE),
 				'jenis_ekstrakurikuler' => $this->input->post('jenis_ekstrakurikuler',TRUE),
+				'cita_cita' => $this->input->post('cita_cita',TRUE),
 				'tinggi_badan' => $this->input->post('tinggi_badan',TRUE),
 				'berat_badan' => $this->input->post('berat_badan',TRUE),
 				'id_jarak' => $this->input->post('id_jarak',TRUE),
@@ -310,6 +314,7 @@ class Member extends CI_Controller
 		$this->form_validation->set_rules('nama_dusun', 'nama dusun', 'trim');
 		$this->form_validation->set_rules('nama_kelurahan', 'nama kelurahan', 'trim');
 		$this->form_validation->set_rules('kecamatan', 'kecamatan', 'trim');
+		$this->form_validation->set_rules('kabko', 'kabko', 'trim');
 		$this->form_validation->set_rules('kode_pos', 'kode pos', 'trim|numeric');
 		$this->form_validation->set_rules('latitude', 'latitude', 'trim');
 		$this->form_validation->set_rules('longitude', 'longitude', 'trim');
@@ -347,6 +352,7 @@ class Member extends CI_Controller
 		$this->form_validation->set_rules('nomor_hp', 'nomor hp', 'trim|numeric');
 		$this->form_validation->set_rules('email', 'email', 'trim|valid_email');
 		$this->form_validation->set_rules('jenis_ekstrakurikuler', 'jenis ekstrakurikuler', 'trim');
+		$this->form_validation->set_rules('cita_cita', 'cita cita', 'trim');
 		$this->form_validation->set_rules('tinggi_badan', 'tinggi badan', 'trim|numeric');
 		$this->form_validation->set_rules('berat_badan', 'berat badan', 'trim|numeric');
 		$this->form_validation->set_rules('id_jarak', 'jarak', 'trim|required');

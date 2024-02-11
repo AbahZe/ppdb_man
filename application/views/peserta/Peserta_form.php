@@ -334,7 +334,15 @@
                 </div>
                 <?php } else { ?>
                     <input type="hidden" class="form-control" name="kecamatan" id="kecamatan" />
-                <?php } ?>                          
+                <?php } ?>  
+                <?php if ($formulir->kabko=='Ya'){ ?>
+                <div class="form-group">
+                    <label for="varchar">Kab/Kota <?php echo form_error('kabko') ?></label>
+                    <input type="text" class="form-control" name="kabko" id="kabko" placeholder="Kab/Kota" value="<?php echo $kabko; ?>" />
+                </div>
+                <?php } else { ?>
+                    <input type="hidden" class="form-control" name="kabko" id="kabko" />
+                <?php } ?>                        
                 <?php if ($formulir->kode_pos=='Ya'){ ?>
                 <div class="form-group">
                     <label for="varchar">Kode Pos <?php echo form_error('kode_pos') ?></label>
@@ -527,6 +535,14 @@
                 <div class="form-group">
                     <label for="varchar">Hobi <?php echo form_error('jenis_ekstrakurikuler') ?></label>
                     <input type="text" class="form-control" name="jenis_ekstrakurikuler" id="jenis_ekstrakurikuler" placeholder="Hobi" value="<?php echo $jenis_ekstrakurikuler; ?>" />
+                </div>
+                <?php } else { ?>
+                    <input type="hidden" class="form-control" name="jenis_ekstrakurikuler" id="jenis_ekstrakurikuler" />
+                <?php } ?>
+                <?php if ($formulir->cita_cita=='Ya'){ ?>
+                <div class="form-group">
+                    <label for="varchar">Cita-Cita <?php echo form_error('cita_cita') ?></label>
+                    <input type="text" class="form-control" name="cita_cita" id="cita_cita" placeholder="Cita-Cita" value="<?php echo $cita_cita; ?>" />
                 </div>
                 <?php } else { ?>
                     <input type="hidden" class="form-control" name="jenis_ekstrakurikuler" id="jenis_ekstrakurikuler" />

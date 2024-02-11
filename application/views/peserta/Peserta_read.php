@@ -67,6 +67,7 @@
 							<tr><td>Nama Dusun</td><td><?php echo $nama_dusun; ?></td></tr>
 							<tr><td>Nama Kelurahan</td><td><?php echo $nama_kelurahan; ?></td></tr>
 							<tr><td>Kecamatan</td><td><?php echo $kecamatan; ?></td></tr>
+							<tr><td>Kab/Kota</td><td><?php echo $kabko; ?></td></tr>
 							<tr><td>Kode Pos</td><td><?php echo $kode_pos; ?></td></tr>
 							<tr><td>Latitude</td><td><?php echo $latitude; ?></td></tr>
 							<tr><td>Longitude</td><td><?php echo $longitude; ?></td></tr>
@@ -81,6 +82,7 @@
 							<tr><td>Nama Tertera di KIP</td><td><?php echo $nama_tertera_di_kip; ?></td></tr>
 							<tr><td>Terima Fisik Kartu KIP</td><td><?php echo $terima_fisik_kartu_kip; ?></td></tr>
 							<tr><td>Jenis Ekstrakurikuler</td><td><?php echo $jenis_ekstrakurikuler; ?></td></tr>
+							<tr><td>Cita-Cita</td><td><?php echo $cita_cita; ?></td></tr>
 							<tr><td><span class="label label-success">Data Orangtua/Wali</span></td><td></td></tr>
 							<tr><td><span class="label label-info">Data Ayah</span></td><td></td></tr>
 							<tr><td>Nama Ayah</td><td><?php echo $nama_ayah; ?></td></tr>

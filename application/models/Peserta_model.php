@@ -17,7 +17,7 @@ class Peserta_model extends CI_Model
 
     // datatables
     function json() {      
-        $this->datatables->select('id_peserta,no_pendaftaran,tanggal_daftar,nama_peserta,jenis_kelamin,nisn,no_kk,nik,tempat_lahir,tanggal_lahir,status_anak,no_registrasi_akta_lahir,agama,kewarganegaraan,berkebutuhan_khusus,alamat,rt,rw,nama_dusun,nama_kelurahan,peserta.kecamatan,kode_pos,latitude,longitude,tempat_tinggal,moda_transportasi,no_kks,anak_ke,penerima_kps_pkh,no_kps_pkh,penerima_kip,no_kip,nama_tertera_di_kip,terima_fisik_kartu_kip,nama_ayah,nik_ayah,tahun_lahir_ayah,pendidikan_ayah,pekerjaan_ayah,penghasilan_bulanan_ayah,berkebutuhan_khusus_ayah,nama_ibu,nik_ibu,tahun_lahir_ibu,pendidikan_ibu,pekerjaan_ibu,penghasilan_bulanan_ibu,berkebutuhan_khusus_ibu,nama_wali,nik_wali,tahun_lahir_wali,pendidikan_wali,pekerjaan_wali,penghasilan_bulanan_wali,no_telepon_rumah,nomor_hp,email,jenis_ekstrakurikuler,tinggi_badan,berat_badan,jumlah_saudara_kandung,pilihan_dua,no_un,no_seri_ijazah,no_seri_ijazah_sd,no_seri_skhu,nilai_rapor,nilai_usbn,nilai_unbk_unkp,status,status_hasil,status_daftar_ulang,id_users,sekolah.id_sekolah,npsn_sekolah,asal_sekolah,jarak.id_jarak,jarak,skor_jarak,jalur.id_jalur,jalur,tahunpelajaran.id_tahun,tahun_pelajaran,status_tahun,jurusan.id_jurusan,nama_jurusan,kuota_jurusan,pilihan_sekolah_lain,catatan');        
+        $this->datatables->select('id_peserta,no_pendaftaran,tanggal_daftar,nama_peserta,jenis_kelamin,nisn,no_kk,nik,tempat_lahir,tanggal_lahir,status_anak,no_registrasi_akta_lahir,agama,kewarganegaraan,berkebutuhan_khusus,alamat,rt,rw,nama_dusun,nama_kelurahan,peserta.kecamatan,kabko,kode_pos,latitude,longitude,tempat_tinggal,moda_transportasi,no_kks,anak_ke,penerima_kps_pkh,no_kps_pkh,penerima_kip,no_kip,nama_tertera_di_kip,terima_fisik_kartu_kip,nama_ayah,nik_ayah,tahun_lahir_ayah,pendidikan_ayah,pekerjaan_ayah,penghasilan_bulanan_ayah,berkebutuhan_khusus_ayah,nama_ibu,nik_ibu,tahun_lahir_ibu,pendidikan_ibu,pekerjaan_ibu,penghasilan_bulanan_ibu,berkebutuhan_khusus_ibu,nama_wali,nik_wali,tahun_lahir_wali,pendidikan_wali,pekerjaan_wali,penghasilan_bulanan_wali,no_telepon_rumah,nomor_hp,email,jenis_ekstrakurikuler,cita_cita,tinggi_badan,berat_badan,jumlah_saudara_kandung,pilihan_dua,no_un,no_seri_ijazah,no_seri_ijazah_sd,no_seri_skhu,nilai_rapor,nilai_usbn,nilai_unbk_unkp,status,status_hasil,status_daftar_ulang,id_users,sekolah.id_sekolah,npsn_sekolah,asal_sekolah,jarak.id_jarak,jarak,skor_jarak,jalur.id_jalur,jalur,tahunpelajaran.id_tahun,tahun_pelajaran,status_tahun,jurusan.id_jurusan,nama_jurusan,kuota_jurusan,pilihan_sekolah_lain,catatan');        
         $this->datatables->from('peserta');        
         //add this line for join
         //$this->datatables->join('table2', 'peserta.field = table2.field');
@@ -40,7 +40,7 @@ class Peserta_model extends CI_Model
     // get all
     function get_all()
     {
-        $this->db->select('id_peserta,no_pendaftaran,tanggal_daftar,nama_peserta,jenis_kelamin,nisn,no_kk,nik,tempat_lahir,tanggal_lahir,status_anak,no_registrasi_akta_lahir,agama,kewarganegaraan,berkebutuhan_khusus,alamat,rt,rw,nama_dusun,nama_kelurahan,peserta.kecamatan,kode_pos,latitude,longitude,tempat_tinggal,moda_transportasi,no_kks,anak_ke,penerima_kps_pkh,no_kps_pkh,penerima_kip,no_kip,nama_tertera_di_kip,terima_fisik_kartu_kip,nama_ayah,nik_ayah,tahun_lahir_ayah,pendidikan_ayah,pekerjaan_ayah,penghasilan_bulanan_ayah,berkebutuhan_khusus_ayah,nama_ibu,nik_ibu,tahun_lahir_ibu,pendidikan_ibu,pekerjaan_ibu,penghasilan_bulanan_ibu,berkebutuhan_khusus_ibu,nama_wali,nik_wali,tahun_lahir_wali,pendidikan_wali,pekerjaan_wali,penghasilan_bulanan_wali,no_telepon_rumah,nomor_hp,email,jenis_ekstrakurikuler,tinggi_badan,berat_badan,jumlah_saudara_kandung,pilihan_dua,no_un,no_seri_ijazah,no_seri_ijazah_sd,no_seri_skhu,nilai_rapor,nilai_usbn,nilai_unbk_unkp,status,status_hasil,status_daftar_ulang,id_users,sekolah.id_sekolah,npsn_sekolah,asal_sekolah,jarak.id_jarak,jarak,skor_jarak,jalur.id_jalur,jalur,tahunpelajaran.id_tahun,tahun_pelajaran,status_tahun,jurusan.id_jurusan,nama_jurusan,kuota_jurusan,pilihan_sekolah_lain,catatan');
+        $this->db->select('id_peserta,no_pendaftaran,tanggal_daftar,nama_peserta,jenis_kelamin,nisn,no_kk,nik,tempat_lahir,tanggal_lahir,status_anak,no_registrasi_akta_lahir,agama,kewarganegaraan,berkebutuhan_khusus,alamat,rt,rw,nama_dusun,nama_kelurahan,peserta.kecamatan,kabko,kode_pos,latitude,longitude,tempat_tinggal,moda_transportasi,no_kks,anak_ke,penerima_kps_pkh,no_kps_pkh,penerima_kip,no_kip,nama_tertera_di_kip,terima_fisik_kartu_kip,nama_ayah,nik_ayah,tahun_lahir_ayah,pendidikan_ayah,pekerjaan_ayah,penghasilan_bulanan_ayah,berkebutuhan_khusus_ayah,nama_ibu,nik_ibu,tahun_lahir_ibu,pendidikan_ibu,pekerjaan_ibu,penghasilan_bulanan_ibu,berkebutuhan_khusus_ibu,nama_wali,nik_wali,tahun_lahir_wali,pendidikan_wali,pekerjaan_wali,penghasilan_bulanan_wali,no_telepon_rumah,nomor_hp,email,jenis_ekstrakurikuler,cita_cita,tinggi_badan,berat_badan,jumlah_saudara_kandung,pilihan_dua,no_un,no_seri_ijazah,no_seri_ijazah_sd,no_seri_skhu,nilai_rapor,nilai_usbn,nilai_unbk_unkp,status,status_hasil,status_daftar_ulang,id_users,sekolah.id_sekolah,npsn_sekolah,asal_sekolah,jarak.id_jarak,jarak,skor_jarak,jalur.id_jalur,jalur,tahunpelajaran.id_tahun,tahun_pelajaran,status_tahun,jurusan.id_jurusan,nama_jurusan,kuota_jurusan,pilihan_sekolah_lain,catatan');
         $this->db->join('sekolah',$this->table.".id_sekolah = sekolah.id_sekolah"); 
         $this->db->join('jarak', $this->table.".id_jarak = jarak.id_jarak");
         $this->db->join('jalur', $this->table.".id_jalur = jalur.id_jalur");
@@ -54,7 +54,7 @@ class Peserta_model extends CI_Model
     // get_count by jurusan
     function get_countjurusan()
     {
-        $this->db->select('id_peserta,no_pendaftaran,tanggal_daftar,nama_peserta,jenis_kelamin,nisn,no_kk,nik,tempat_lahir,tanggal_lahir,status_anak,no_registrasi_akta_lahir,agama,kewarganegaraan,berkebutuhan_khusus,alamat,rt,rw,nama_dusun,nama_kelurahan,peserta.kecamatan,kode_pos,latitude,longitude,tempat_tinggal,moda_transportasi,no_kks,anak_ke,penerima_kps_pkh,no_kps_pkh,penerima_kip,no_kip,nama_tertera_di_kip,terima_fisik_kartu_kip,nama_ayah,nik_ayah,tahun_lahir_ayah,pendidikan_ayah,pekerjaan_ayah,penghasilan_bulanan_ayah,berkebutuhan_khusus_ayah,nama_ibu,nik_ibu,tahun_lahir_ibu,pendidikan_ibu,pekerjaan_ibu,penghasilan_bulanan_ibu,berkebutuhan_khusus_ibu,nama_wali,nik_wali,tahun_lahir_wali,pendidikan_wali,pekerjaan_wali,penghasilan_bulanan_wali,no_telepon_rumah,nomor_hp,email,jenis_ekstrakurikuler,tinggi_badan,berat_badan,jumlah_saudara_kandung,pilihan_dua,no_un,no_seri_ijazah,no_seri_ijazah_sd,no_seri_skhu,nilai_rapor,nilai_usbn,nilai_unbk_unkp,status,status_hasil,status_daftar_ulang,id_users,sekolah.id_sekolah,npsn_sekolah,asal_sekolah,jarak.id_jarak,jarak,skor_jarak,jalur.id_jalur,jalur,persentase,tahunpelajaran.id_tahun,tahun_pelajaran,kuota,status_tahun,jurusan.id_jurusan,nama_jurusan,kuota_jurusan,count(jurusan.id_jurusan) as countjurusan,count(jalur.id_jalur) as countjalur,pilihan_sekolah_lain,catatan');
+        $this->db->select('id_peserta,no_pendaftaran,tanggal_daftar,nama_peserta,jenis_kelamin,nisn,no_kk,nik,tempat_lahir,tanggal_lahir,status_anak,no_registrasi_akta_lahir,agama,kewarganegaraan,berkebutuhan_khusus,alamat,rt,rw,nama_dusun,nama_kelurahan,peserta.kecamatan,kabko,kode_pos,latitude,longitude,tempat_tinggal,moda_transportasi,no_kks,anak_ke,penerima_kps_pkh,no_kps_pkh,penerima_kip,no_kip,nama_tertera_di_kip,terima_fisik_kartu_kip,nama_ayah,nik_ayah,tahun_lahir_ayah,pendidikan_ayah,pekerjaan_ayah,penghasilan_bulanan_ayah,berkebutuhan_khusus_ayah,nama_ibu,nik_ibu,tahun_lahir_ibu,pendidikan_ibu,pekerjaan_ibu,penghasilan_bulanan_ibu,berkebutuhan_khusus_ibu,nama_wali,nik_wali,tahun_lahir_wali,pendidikan_wali,pekerjaan_wali,penghasilan_bulanan_wali,no_telepon_rumah,nomor_hp,email,jenis_ekstrakurikuler,cita_cita,tinggi_badan,berat_badan,jumlah_saudara_kandung,pilihan_dua,no_un,no_seri_ijazah,no_seri_ijazah_sd,no_seri_skhu,nilai_rapor,nilai_usbn,nilai_unbk_unkp,status,status_hasil,status_daftar_ulang,id_users,sekolah.id_sekolah,npsn_sekolah,asal_sekolah,jarak.id_jarak,jarak,skor_jarak,jalur.id_jalur,jalur,persentase,tahunpelajaran.id_tahun,tahun_pelajaran,kuota,status_tahun,jurusan.id_jurusan,nama_jurusan,kuota_jurusan,count(jurusan.id_jurusan) as countjurusan,count(jalur.id_jalur) as countjalur,pilihan_sekolah_lain,catatan');
         $this->db->join('sekolah',$this->table.".id_sekolah = sekolah.id_sekolah"); 
         $this->db->join('jarak', $this->table.".id_jarak = jarak.id_jarak");
         $this->db->join('jalur', $this->table.".id_jalur = jalur.id_jalur");
@@ -70,7 +70,7 @@ class Peserta_model extends CI_Model
     // get data by id
     function get_by_id($id)
     {
-        $this->db->select('id_peserta,no_pendaftaran,tanggal_daftar,nama_peserta,jenis_kelamin,nisn,no_kk,nik,tempat_lahir,tanggal_lahir,status_anak,no_registrasi_akta_lahir,agama,kewarganegaraan,berkebutuhan_khusus,alamat,rt,rw,nama_dusun,nama_kelurahan,peserta.kecamatan,kode_pos,latitude,longitude,tempat_tinggal,moda_transportasi,no_kks,anak_ke,penerima_kps_pkh,no_kps_pkh,penerima_kip,no_kip,nama_tertera_di_kip,terima_fisik_kartu_kip,nama_ayah,nik_ayah,tahun_lahir_ayah,pendidikan_ayah,pekerjaan_ayah,penghasilan_bulanan_ayah,berkebutuhan_khusus_ayah,nama_ibu,nik_ibu,tahun_lahir_ibu,pendidikan_ibu,pekerjaan_ibu,penghasilan_bulanan_ibu,berkebutuhan_khusus_ibu,nama_wali,nik_wali,tahun_lahir_wali,pendidikan_wali,pekerjaan_wali,penghasilan_bulanan_wali,no_telepon_rumah,nomor_hp,email,jenis_ekstrakurikuler,tinggi_badan,berat_badan,jumlah_saudara_kandung,pilihan_dua,no_un,no_seri_ijazah,no_seri_ijazah_sd,no_seri_skhu,nilai_rapor,nilai_usbn,nilai_unbk_unkp,status,status_hasil,status_daftar_ulang,id_users,qrcode,sekolah.id_sekolah,npsn_sekolah,asal_sekolah,sekolah.kecamatan as kecsekolah,jarak.id_jarak,jarak,skor_jarak,jalur.id_jalur,jalur,tahunpelajaran.id_tahun,tahun_pelajaran,tanggal_mulai_daftar_ulang,tanggal_selesai_daftar_ulang,tanggal_pengumuman,status_tahun,jurusan.id_jurusan,nama_jurusan,kuota_jurusan,pilihan_sekolah_lain,catatan');
+        $this->db->select('id_peserta,no_pendaftaran,tanggal_daftar,nama_peserta,jenis_kelamin,nisn,no_kk,nik,tempat_lahir,tanggal_lahir,status_anak,no_registrasi_akta_lahir,agama,kewarganegaraan,berkebutuhan_khusus,alamat,rt,rw,nama_dusun,nama_kelurahan,peserta.kecamatan,kabko,kode_pos,latitude,longitude,tempat_tinggal,moda_transportasi,no_kks,anak_ke,penerima_kps_pkh,no_kps_pkh,penerima_kip,no_kip,nama_tertera_di_kip,terima_fisik_kartu_kip,nama_ayah,nik_ayah,tahun_lahir_ayah,pendidikan_ayah,pekerjaan_ayah,penghasilan_bulanan_ayah,berkebutuhan_khusus_ayah,nama_ibu,nik_ibu,tahun_lahir_ibu,pendidikan_ibu,pekerjaan_ibu,penghasilan_bulanan_ibu,berkebutuhan_khusus_ibu,nama_wali,nik_wali,tahun_lahir_wali,pendidikan_wali,pekerjaan_wali,penghasilan_bulanan_wali,no_telepon_rumah,nomor_hp,email,jenis_ekstrakurikuler,cita_cita,tinggi_badan,berat_badan,jumlah_saudara_kandung,pilihan_dua,no_un,no_seri_ijazah,no_seri_ijazah_sd,no_seri_skhu,nilai_rapor,nilai_usbn,nilai_unbk_unkp,status,status_hasil,status_daftar_ulang,id_users,qrcode,sekolah.id_sekolah,npsn_sekolah,asal_sekolah,sekolah.kecamatan as kecsekolah,jarak.id_jarak,jarak,skor_jarak,jalur.id_jalur,jalur,tahunpelajaran.id_tahun,tahun_pelajaran,tanggal_mulai_daftar_ulang,tanggal_selesai_daftar_ulang,tanggal_pengumuman,status_tahun,jurusan.id_jurusan,nama_jurusan,kuota_jurusan,pilihan_sekolah_lain,catatan');
         $this->db->join('sekolah',$this->table.".id_sekolah = sekolah.id_sekolah"); 
         $this->db->join('jarak', $this->table.".id_jarak = jarak.id_jarak");
         $this->db->join('jalur', $this->table.".id_jalur = jalur.id_jalur");
@@ -303,6 +303,7 @@ class Peserta_model extends CI_Model
 		$this->db->or_like('nama_dusun', $q);
 		$this->db->or_like('nama_kelurahan', $q);
 		$this->db->or_like('kecamatan', $q);
+        $this->db->or_like('kabko', $q);
 		$this->db->or_like('kode_pos', $q);
 		$this->db->or_like('latitude', $q);
 		$this->db->or_like('longitude', $q);
@@ -340,6 +341,7 @@ class Peserta_model extends CI_Model
 		$this->db->or_like('nomor_hp', $q);
 		$this->db->or_like('email', $q);
 		$this->db->or_like('jenis_ekstrakurikuler', $q);
+        $this->db->or_like('cita_cita', $q);
 		$this->db->or_like('tinggi_badan', $q);
 		$this->db->or_like('berat_badan', $q);
 		$this->db->or_like('id_jarak', $q);
@@ -390,6 +392,7 @@ class Peserta_model extends CI_Model
 		$this->db->or_like('nama_dusun', $q);
 		$this->db->or_like('nama_kelurahan', $q);
 		$this->db->or_like('kecamatan', $q);
+        $this->db->or_like('kabko', $q);
 		$this->db->or_like('kode_pos', $q);
 		$this->db->or_like('latitude', $q);
 		$this->db->or_like('longitude', $q);
@@ -427,6 +430,7 @@ class Peserta_model extends CI_Model
 		$this->db->or_like('nomor_hp', $q);
 		$this->db->or_like('email', $q);
 		$this->db->or_like('jenis_ekstrakurikuler', $q);
+        $this->db->or_like('cita_cita', $q);
 		$this->db->or_like('tinggi_badan', $q);
 		$this->db->or_like('berat_badan', $q);
 		$this->db->or_like('id_jarak', $q);

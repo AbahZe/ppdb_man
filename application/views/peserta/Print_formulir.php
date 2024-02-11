@@ -186,6 +186,13 @@
 		    <td style="border-bottom: 1px dotted"><?php echo $peserta->kecamatan ?></td>
 		</tr>
 	<?php } ?>	
+	<?php if ($formulir->kabko=='Ya'){ ?>				
+		<tr>
+		    <td>Kab/Kota</td>
+		    <td>: </td>
+		    <td style="border-bottom: 1px dotted"><?php echo $peserta->kabko ?></td>
+		</tr>
+	<?php } ?>
 	<?php if ($formulir->kode_pos=='Ya'){ ?>			
 		<tr>
 		    <td>Kode Pos</td>
@@ -290,6 +297,13 @@
 		    <td>Hobi</td>
 		    <td>: </td>
 		    <td style="border-bottom: 1px dotted"><?php echo $peserta->jenis_ekstrakurikuler ?></td>
+		</tr>
+	<?php } ?>
+	<?php if ($formulir->cita_cita=='Ya'){ ?>		
+		<tr>    
+		    <td>Cita-Cita</td>
+		    <td>: </td>
+		    <td style="border-bottom: 1px dotted"><?php echo $peserta->cita_cita ?></td>
 		</tr>
 	<?php } ?>
 			

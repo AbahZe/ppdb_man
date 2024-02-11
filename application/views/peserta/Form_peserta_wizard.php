@@ -426,7 +426,15 @@
                           </div>
                           <?php } else { ?>
                                 <input type="hidden" class="form-control" name="kecamatan" id="kecamatan" />
-                          <?php } ?>                          
+                          <?php } ?>
+                          <?php if ($formulir->kabko=='Ya'){ ?>
+                          <div class="form-group">
+                                <label for="varchar">Kab/Kota <span style="color:red;">*</span> <?php echo form_error('kabko') ?></label>
+                                <input type="text" class="form-control" name="kabko" id="kabko" placeholder="Kab/Kota" required/>
+                          </div>
+                          <?php } else { ?>
+                                <input type="hidden" class="form-control" name="kabko" id="kabko" />
+                          <?php } ?>                           
                           <?php if ($formulir->kode_pos=='Ya'){ ?>
                           <div class="form-group">
                                 <label for="varchar">Kode Pos <span style="color:red;">*</span> <?php echo form_error('kode_pos') ?></label>
@@ -566,13 +574,13 @@
                           <?php } else { ?>
                                 <input type="hidden" class="form-control" name="terima_fisik_kartu_kip" id="terima_fisik_kartu_kip" />
                           <?php } ?>                          
-                          <?php if ($formulir->jenis_ekstrakurikuler=='Ya'){ ?>
+                          <?php if ($formulir->cita_cita=='Ya'){ ?>
                           <div class="form-group">
-                                <label for="varchar">Hobi <span style="color:red;">*</span> <?php echo form_error('jenis_ekstrakurikuler') ?></label>
-                                <input type="text" class="form-control" name="jenis_ekstrakurikuler" id="jenis_ekstrakurikuler" placeholder="Hobi" required/>
+                                <label for="varchar">Cita-Cita <span style="color:red;">*</span> <?php echo form_error('cita_cita') ?></label>
+                                <input type="text" class="form-control" name="cita_cita" id="cita_cita" placeholder="Cita-Cita" required/>
                           </div>
                           <?php } else { ?>
-                                <input type="hidden" class="form-control" name="jenis_ekstrakurikuler" id="jenis_ekstrakurikuler" />
+                                <input type="hidden" class="form-control" name="cita_cita" id="cita_cita" />
                           <?php } ?>                                                   
                       </div>
 

@@ -313,7 +313,15 @@
                           </div>
                           <?php } else { ?>
                                 <input type="hidden" class="form-control" name="kecamatan" id="kecamatan" />
-                          <?php } ?>                          
+                          <?php } ?>
+                          <?php if ($formulir->kabko=='Ya'){ ?>
+                          <div class="form-group">
+                                <label for="varchar">Kab/Kota <span style="color:red;">*</span> <?php echo form_error('kabko') ?></label>
+                                <input type="text" class="form-control" name="kabko" id="kabko" placeholder="Kab/Kota" required/>
+                          </div>
+                          <?php } else { ?>
+                                <input type="hidden" class="form-control" name="kabko" id="kabko" />
+                          <?php } ?>                         
                           <?php if ($formulir->kode_pos=='Ya'){ ?>
                           <div class="form-group">
                                 <label for="varchar">Kode Pos <span style="color:red;">*</span> <?php echo form_error('kode_pos') ?></label>
@@ -460,6 +468,14 @@
                           </div>
                           <?php } else { ?>
                                 <input type="hidden" class="form-control" name="jenis_ekstrakurikuler" id="jenis_ekstrakurikuler" />
+                          <?php } ?>
+                          <?php if ($formulir->cita_cita=='Ya'){ ?>
+                          <div class="form-group">
+                                <label for="varchar">Cita-Cita <span style="color:red;">*</span> <?php echo form_error('cita_cita') ?></label>
+                                <input type="text" class="form-control" name="cita_cita" id="cita_cita" placeholder="Cita-Cita" required/>
+                          </div>
+                          <?php } else { ?>
+                                <input type="hidden" class="form-control" name="cita_cita" id="cita_cita" />
                           <?php } ?>
 
                           <?php if ($formulir->nama_ayah=='Ya'){ ?>

@@ -151,7 +151,10 @@
                         </div>                                         
                         <div class="form-group">                      
                           <input type="checkbox" name="kecamatan" id="kecamatan" value="Ya" <?php if ($formulir->kecamatan=='Ya') { echo 'checked'; } ?>>&nbsp; Kecamatan  
-                        </div> 
+                        </div>
+                        <div class="form-group">                      
+                          <input type="checkbox" name="kabko" id="kabko" value="Ya" <?php if ($formulir->kabko=='Ya') { echo 'checked'; } ?>>&nbsp; Kab/Kota  
+                        </div>
                         <div class="form-group">                      
                           <input type="checkbox" name="kode_pos" id="kode_pos" value="Ya" <?php if ($formulir->kode_pos=='Ya') { echo 'checked'; } ?>>&nbsp; Kode Pos  
                         </div>                                         
@@ -193,6 +196,9 @@
                         </div>                                         
                         <div class="form-group">                      
                           <input type="checkbox" name="jenis_ekstrakurikuler" id="jenis_ekstrakurikuler" value="Ya" <?php if ($formulir->jenis_ekstrakurikuler=='Ya') { echo 'checked'; } ?>>&nbsp; Hobi
+                        </div>
+                        <div class="form-group">                      
+                          <input type="checkbox" name="cita_cita" id="cita_cita" value="Ya" <?php if ($formulir->jenis_ekstrakurikuler=='Ya') { echo 'checked'; } ?>>&nbsp; Cita-Cita
                         </div>
                       </div> 
 

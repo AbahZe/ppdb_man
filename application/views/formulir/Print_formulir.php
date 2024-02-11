@@ -180,6 +180,13 @@
 		    <td style="border-bottom: 1px dotted"></td>
 		</tr>
 	<?php } ?>	
+	<?php if ($formulir->kabko=='Ya'){ ?>				
+		<tr>
+		    <td>Kab/Kota</td>
+		    <td>: </td>
+		    <td style="border-bottom: 1px dotted"></td>
+		</tr>
+	<?php } ?>
 	<?php if ($formulir->kode_pos=='Ya'){ ?>			
 		<tr>
 		    <td>Kode Pos</td>
@@ -282,6 +289,13 @@
 	<?php if ($formulir->jenis_ekstrakurikuler=='Ya'){ ?>		
 		<tr>    
 		    <td>Hobi</td>
+		    <td>: </td>
+		    <td style="border-bottom: 1px dotted"></td>
+		</tr>
+	<?php } ?>
+	<?php if ($formulir->cita_cita=='Ya'){ ?>		
+		<tr>    
+		    <td>Cita Cita</td>
 		    <td>: </td>
 		    <td style="border-bottom: 1px dotted"></td>
 		</tr>

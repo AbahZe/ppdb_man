@@ -62,6 +62,7 @@ class Formulir extends CI_Controller
 				'nama_dusun' => $this->input->post('nama_dusun',TRUE),
 				'nama_kelurahan' => $this->input->post('nama_kelurahan',TRUE),
 				'kecamatan' => $this->input->post('kecamatan',TRUE),
+				'kabko' => $this->input->post('kabko',TRUE),
 				'kode_pos' => $this->input->post('kode_pos',TRUE),
 				'latitude' => $this->input->post('latitude',TRUE),
 				'longitude' => $this->input->post('longitude',TRUE),
@@ -99,6 +100,7 @@ class Formulir extends CI_Controller
 				// 'nomor_hp' => $this->input->post('nomor_hp',TRUE),
 				'email' => $this->input->post('email',TRUE),
 				'jenis_ekstrakurikuler' => $this->input->post('jenis_ekstrakurikuler',TRUE),
+				'cita_cita' => $this->input->post('cita_cita',TRUE),
 				'tinggi_badan' => $this->input->post('tinggi_badan',TRUE),
 				'berat_badan' => $this->input->post('berat_badan',TRUE),
 				// 'jarak_ke_sekolah' => $this->input->post('jarak_ke_sekolah',TRUE),
@@ -161,6 +163,7 @@ class Formulir extends CI_Controller
 	$this->form_validation->set_rules('nama_dusun', 'nama dusun', 'trim');
 	$this->form_validation->set_rules('nama_kelurahan', 'nama kelurahan', 'trim');
 	$this->form_validation->set_rules('kecamatan', 'kecamatan', 'trim');
+	$this->form_validation->set_rules('kabko', 'kabko', 'trim');
 	$this->form_validation->set_rules('kode_pos', 'kode pos', 'trim');
 	$this->form_validation->set_rules('latitude', 'latitude', 'trim');
 	$this->form_validation->set_rules('longitude', 'longitude', 'trim');
@@ -198,6 +201,7 @@ class Formulir extends CI_Controller
 	$this->form_validation->set_rules('nomor_hp', 'nomor hp', 'trim');
 	$this->form_validation->set_rules('email', 'email', 'trim');
 	$this->form_validation->set_rules('jenis_ekstrakurikuler', 'jenis ekstrakurikuler', 'trim');
+	$this->form_validation->set_rules('cita_cita', 'cita cita', 'trim');
 	$this->form_validation->set_rules('tinggi_badan', 'tinggi badan', 'trim');
 	$this->form_validation->set_rules('berat_badan', 'berat badan', 'trim');
 	$this->form_validation->set_rules('jarak_ke_sekolah', 'jarak ke sekolah', 'trim');

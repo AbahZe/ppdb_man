@@ -73,6 +73,7 @@ class Peserta extends CI_Controller
 				'nama_dusun' => $row->nama_dusun,
 				'nama_kelurahan' => $row->nama_kelurahan,
 				'kecamatan' => $row->kecamatan,
+				'kabko' => $row->kabko,
 				'kode_pos' => $row->kode_pos,
 				'latitude' => $row->latitude,
 				'longitude' => $row->longitude,
@@ -110,6 +111,7 @@ class Peserta extends CI_Controller
 				'nomor_hp' => $row->nomor_hp,
 				'email' => $row->email,
 				'jenis_ekstrakurikuler' => $row->jenis_ekstrakurikuler,
+				'cita_cita' => $row->cita_cita,
 				'tinggi_badan' => $row->tinggi_badan,
 				'berat_badan' => $row->berat_badan,
 				'jarak' => $row->jarak,				
@@ -179,6 +181,7 @@ class Peserta extends CI_Controller
 			'nama_dusun' => set_value('nama_dusun'),
 			'nama_kelurahan' => set_value('nama_kelurahan'),
 			'kecamatan' => set_value('kecamatan'),
+			'kabko' => set_value('kabko'),
 			'kode_pos' => set_value('kode_pos'),
 			'latitude' => set_value('latitude'),
 			'longitude' => set_value('longitude'),
@@ -216,6 +219,7 @@ class Peserta extends CI_Controller
 			'nomor_hp' => set_value('nomor_hp'),
 			'email' => set_value('email'),
 			'jenis_ekstrakurikuler' => set_value('jenis_ekstrakurikuler'),
+			'cita_cita' => set_value('cita_cita'),
 			'tinggi_badan' => set_value('tinggi_badan'),
 			'berat_badan' => set_value('berat_badan'),
 			'id_jarak' => set_value('id_jarak'),
@@ -333,6 +337,7 @@ class Peserta extends CI_Controller
 				'nama_dusun' => $this->input->post('nama_dusun',TRUE),
 				'nama_kelurahan' => $this->input->post('nama_kelurahan',TRUE),
 				'kecamatan' => $this->input->post('kecamatan',TRUE),
+				'kabko' => $this->input->post('kabko',TRUE),
 				'kode_pos' => $this->input->post('kode_pos',TRUE),
 				'latitude' => $this->input->post('latitude',TRUE),
 				'longitude' => $this->input->post('longitude',TRUE),
@@ -370,6 +375,7 @@ class Peserta extends CI_Controller
 				'nomor_hp' => $this->input->post('nomor_hp',TRUE),
 				'email' => $this->input->post('email',TRUE),
 				'jenis_ekstrakurikuler' => $this->input->post('jenis_ekstrakurikuler',TRUE),
+				'cita_cita' => $this->input->post('cita_cita',TRUE),
 				'tinggi_badan' => $this->input->post('tinggi_badan',TRUE),
 				'berat_badan' => $this->input->post('berat_badan',TRUE),
 				'id_jarak' => $this->input->post('id_jarak',TRUE),
@@ -436,6 +442,7 @@ class Peserta extends CI_Controller
 				'nama_dusun' => set_value('nama_dusun', $row->nama_dusun),
 				'nama_kelurahan' => set_value('nama_kelurahan', $row->nama_kelurahan),
 				'kecamatan' => set_value('kecamatan', $row->kecamatan),
+				'kabko' => set_value('kabko', $row->kabko),
 				'kode_pos' => set_value('kode_pos', $row->kode_pos),
 				'latitude' => set_value('latitude', $row->latitude),
 				'longitude' => set_value('longitude', $row->longitude),
@@ -473,6 +480,7 @@ class Peserta extends CI_Controller
 				'nomor_hp' => set_value('nomor_hp', $row->nomor_hp),
 				'email' => set_value('email', $row->email),
 				'jenis_ekstrakurikuler' => set_value('jenis_ekstrakurikuler', $row->jenis_ekstrakurikuler),
+				'cita_cita' => set_value('cita_cita', $row->cita_cita),
 				'tinggi_badan' => set_value('tinggi_badan', $row->tinggi_badan),
 				'berat_badan' => set_value('berat_badan', $row->berat_badan),
 				'id_jarak' => set_value('id_jarak', $row->id_jarak),
@@ -549,6 +557,7 @@ class Peserta extends CI_Controller
 				'nama_dusun' => $this->input->post('nama_dusun',TRUE),
 				'nama_kelurahan' => $this->input->post('nama_kelurahan',TRUE),
 				'kecamatan' => $this->input->post('kecamatan',TRUE),
+				'kabko' => $this->input->post('kabko',TRUE),
 				'kode_pos' => $this->input->post('kode_pos',TRUE),
 				'latitude' => $this->input->post('latitude',TRUE),
 				'longitude' => $this->input->post('longitude',TRUE),
@@ -586,6 +595,7 @@ class Peserta extends CI_Controller
 				'nomor_hp' => $this->input->post('nomor_hp',TRUE),
 				'email' => $this->input->post('email',TRUE),
 				'jenis_ekstrakurikuler' => $this->input->post('jenis_ekstrakurikuler',TRUE),
+				'cita_cita' => $this->input->post('cita_cita',TRUE),
 				'tinggi_badan' => $this->input->post('tinggi_badan',TRUE),
 				'berat_badan' => $this->input->post('berat_badan',TRUE),
 				'id_jarak' => $this->input->post('id_jarak',TRUE),
@@ -712,6 +722,7 @@ class Peserta extends CI_Controller
 	$this->form_validation->set_rules('nama_dusun', 'nama dusun', 'trim');
 	$this->form_validation->set_rules('nama_kelurahan', 'nama kelurahan', 'trim');
 	$this->form_validation->set_rules('kecamatan', 'kecamatan', 'trim');
+	$this->form_validation->set_rules('kabko', 'kabko', 'trim');
 	$this->form_validation->set_rules('kode_pos', 'kode pos', 'trim|numeric');
 	$this->form_validation->set_rules('latitude', 'latitude', 'trim');
 	$this->form_validation->set_rules('longitude', 'longitude', 'trim');
@@ -749,6 +760,7 @@ class Peserta extends CI_Controller
 	$this->form_validation->set_rules('nomor_hp', 'nomor hp', 'trim|numeric');
 	$this->form_validation->set_rules('email', 'email', 'trim|valid_email');
 	$this->form_validation->set_rules('jenis_ekstrakurikuler', 'jenis ekstrakurikuler', 'trim');
+	$this->form_validation->set_rules('cita_cita', 'cita cita', 'trim');
 	$this->form_validation->set_rules('tinggi_badan', 'tinggi badan', 'trim|numeric');
 	$this->form_validation->set_rules('berat_badan', 'berat badan', 'trim|numeric');
 	$this->form_validation->set_rules('id_jarak', 'id jarak', 'trim|required');
@@ -815,6 +827,7 @@ class Peserta extends CI_Controller
 		xlsWriteLabel($tablehead, $kolomhead++, "Nama Dusun");
 		xlsWriteLabel($tablehead, $kolomhead++, "Nama Kelurahan");
 		xlsWriteLabel($tablehead, $kolomhead++, "Kecamatan");
+		xlsWriteLabel($tablehead, $kolomhead++, "kabko");
 		xlsWriteLabel($tablehead, $kolomhead++, "Kode Pos");
 		xlsWriteLabel($tablehead, $kolomhead++, "Latitude");
 		xlsWriteLabel($tablehead, $kolomhead++, "Longitude");
@@ -935,6 +948,7 @@ class Peserta extends CI_Controller
 	    xlsWriteLabel($tablebody, $kolombody++, $data->nama_dusun);
 	    xlsWriteLabel($tablebody, $kolombody++, $data->nama_kelurahan);
 	    xlsWriteLabel($tablebody, $kolombody++, $data->kecamatan);
+		xlsWriteLabel($tablebody, $kolombody++, $data->kabko);
 	    xlsWriteLabel($tablebody, $kolombody++, $data->kode_pos);
 	    xlsWriteLabel($tablebody, $kolombody++, $data->latitude);
 	    xlsWriteLabel($tablebody, $kolombody++, $data->longitude);
@@ -948,7 +962,8 @@ class Peserta extends CI_Controller
 	    xlsWriteLabel($tablebody, $kolombody++, $data->no_kip);
 	    xlsWriteLabel($tablebody, $kolombody++, $data->nama_tertera_di_kip);
 	    xlsWriteLabel($tablebody, $kolombody++, $data->terima_fisik_kartu_kip);
-	    xlsWriteLabel($tablebody, $kolombody++, $data->jenis_ekstrakurikuler);	    
+	    xlsWriteLabel($tablebody, $kolombody++, $data->jenis_ekstrakurikuler);	
+		xlsWriteLabel($tablebody, $kolombody++, $data->cita_cita);    
 	    xlsWriteLabel($tablebody, $kolombody++, $data->nama_ayah);
 	    xlsWriteLabel($tablebody, $kolombody++, $data->nik_ayah);
 	    xlsWriteLabel($tablebody, $kolombody++, $data->tahun_lahir_ayah);
