@@ -114,6 +114,13 @@
 		    <td>: </td>
 		    <td style="border-bottom: 1px dotted"></td>
 		</tr>
+	<?php if ($formulir->status_anak=='Ya'){ ?>			
+		<tr>
+		    <td>Status Anak</td>
+		    <td>: </td>
+		    <td style="border-bottom: 1px dotted"></td>
+		</tr>		
+	<?php } ?>
 	<?php if ($formulir->no_registrasi_akta_lahir=='Ya'){ ?>		
 		<tr>
 		    <td>No. Registrasi Akta Lahir</td>

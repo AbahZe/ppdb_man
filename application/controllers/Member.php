@@ -43,6 +43,7 @@ class Member extends CI_Controller
 		    'nik' => set_value('nik'),
 		    'tempat_lahir' => set_value('tempat_lahir'),
 		    'tanggal_lahir' => set_value('tanggal_lahir'),
+			'status_anak' => set_value('status_anak'),
 		    'no_registrasi_akta_lahir' => set_value('no_registrasi_akta_lahir'),
 		    'agama' => set_value('agama'),
 		    'kewarganegaraan' => set_value('kewarganegaraan'),
@@ -195,6 +196,7 @@ class Member extends CI_Controller
 				'nik' => $this->input->post('nik',TRUE),
 				'tempat_lahir' => $this->input->post('tempat_lahir',TRUE),
         		'tanggal_lahir' => date('Y-m-d', strtotime($this->input->post('tanggal_lahir',TRUE))),
+				'status_anak' => $this->input->post('status_anak',TRUE),
 				'no_registrasi_akta_lahir' => $this->input->post('no_registrasi_akta_lahir',TRUE),
 				'agama' => $this->input->post('agama',TRUE),
 				'kewarganegaraan' => $this->input->post('kewarganegaraan',TRUE),
@@ -297,6 +299,7 @@ class Member extends CI_Controller
 		$this->form_validation->set_rules('nik', 'nik', 'trim|numeric|exact_length[16]');
 		$this->form_validation->set_rules('tempat_lahir', 'tempat lahir', 'trim|required');
 		$this->form_validation->set_rules('tanggal_lahir', 'tanggal lahir', 'trim|required');
+		$this->form_validation->set_rules('status_anak', 'status anak', 'trim');
 		$this->form_validation->set_rules('no_registrasi_akta_lahir', 'no registrasi akta lahir', 'trim');
 		$this->form_validation->set_rules('agama', 'agama', 'trim|required');
 		$this->form_validation->set_rules('kewarganegaraan', 'kewarganegaraan', 'trim');

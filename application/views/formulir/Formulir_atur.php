@@ -118,6 +118,9 @@
                         </div>                                         
                         <div class="form-group">                      
                           <input type="checkbox" name="tanggal_lahir" id="tanggal_lahir" value="Ya" checked required>&nbsp; Tanggal Lahir 
+                        </div>
+                        <div class="form-group">                      
+                          <input type="checkbox" name="status_anak" id="status_anak" value="Ya" <?php if ($formulir->status_anak=='Ya') { echo 'checked'; } ?>>&nbsp; Status Anak  
                         </div> 
                         <div class="form-group">                      
                           <input type="checkbox" name="no_registrasi_akta_lahir" id="no_registrasi_akta_lahir" value="Ya" <?php if ($formulir->no_registrasi_akta_lahir=='Ya') { echo 'checked'; } ?>>&nbsp; No Registrasi Akta Lahir

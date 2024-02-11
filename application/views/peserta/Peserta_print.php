@@ -123,6 +123,7 @@
 		    <td><?php echo $peserta->nik ?></td>
 		    <td><?php echo $peserta->tempat_lahir ?></td>
 		    <td><?php echo $peserta->tanggal_lahir ?></td>
+			<td><?php echo $peserta->status_anak ?></td>
 		    <td><?php echo $peserta->no_registrasi_akta_lahir ?></td>
 		    <td><?php echo $peserta->agama ?></td>
 		    <td><?php echo $peserta->kewarganegaraan ?></td>

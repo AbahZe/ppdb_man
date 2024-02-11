@@ -56,6 +56,7 @@
 							<tr><td>NIK</td><td><?php echo $nik; ?></td></tr>
 							<tr><td>Tempat Lahir</td><td><?php echo $tempat_lahir; ?></td></tr>
 							<tr><td>Tanggal Lahir</td><td><?php echo date('d F Y', strtotime($tanggal_lahir)); ?></td></tr>
+							<tr><td>Status Anak</td><td><?php echo $status_anak; ?></td></tr>
 							<tr><td>No Registrasi Akta Lahir</td><td><?php echo $no_registrasi_akta_lahir; ?></td></tr>
 							<tr><td>Agama</td><td><?php echo $agama; ?></td></tr>
 							<tr><td>Kewarganegaraan</td><td><?php echo $kewarganegaraan; ?></td></tr>

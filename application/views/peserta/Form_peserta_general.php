@@ -193,6 +193,19 @@
                                 <input type="text" class="form-control" name="tanggal_lahir" id="tanggal_lahir" placeholder="Tanggal Lahir" required/>
                           </div>
                           <?php } ?>
+                          <?php if ($formulir->status_anak=='Ya'){ ?>
+                          <div class="form-group">
+                                <label for="varchar">Status Anak <span style="color:red;">*</span> <?php echo form_error('status_anak') ?></label>
+                                <select type="text" class="form-control" name="status_anak" id="status_anak" placeholder="Status Anak" value="" required/>
+                                        <option value="">Pilih Status</option>
+                                        <option value="Anak Kandung">Anak Kandung</option>
+                                        <option value="Anak Tiri">Anak Tiri</option>
+                                        <option value="Anak Angkat">Anak Angkat</option>
+                                </select>
+                          </div>
+                          <?php } else { ?>
+                              <input type="hidden" class="form-control" name="status_anak" id="status_anak" />
+                          <?php } ?>
                           <?php if ($formulir->no_registrasi_akta_lahir=='Ya'){ ?>
                           <div class="form-group">
                                 <label for="varchar">No Registrasi Akta Lahir <?php echo form_error('no_registrasi_akta_lahir') ?></label>

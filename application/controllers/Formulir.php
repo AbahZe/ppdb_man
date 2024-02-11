@@ -51,6 +51,7 @@ class Formulir extends CI_Controller
 				'nik' => $this->input->post('nik',TRUE),
 				// 'tempat_lahir' => $this->input->post('tempat_lahir',TRUE),
 				// 'tanggal_lahir' => $this->input->post('tanggal_lahir',TRUE),
+				'status_anak' => $this->input->post('status_anak',TRUE),
 				'no_registrasi_akta_lahir' => $this->input->post('no_registrasi_akta_lahir',TRUE),
 				// 'agama' => $this->input->post('agama',TRUE),
 				'kewarganegaraan' => $this->input->post('kewarganegaraan',TRUE),
@@ -149,6 +150,7 @@ class Formulir extends CI_Controller
 	$this->form_validation->set_rules('nik', 'nik', 'trim');
 	$this->form_validation->set_rules('tempat_lahir', 'tempat lahir', 'trim');
 	$this->form_validation->set_rules('tanggal_lahir', 'tanggal lahir', 'trim');
+	$this->form_validation->set_rules('status_anak', 'status anak', 'trim');
 	$this->form_validation->set_rules('no_registrasi_akta_lahir', 'no registrasi akta lahir', 'trim');
 	$this->form_validation->set_rules('agama', 'agama', 'trim');
 	$this->form_validation->set_rules('kewarganegaraan', 'kewarganegaraan', 'trim');

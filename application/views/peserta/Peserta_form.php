@@ -158,6 +158,31 @@
                     <input type="text" class="form-control" name="tanggal_lahir" id="tanggal_lahir" placeholder="Tanggal Lahir" value="<?php echo $tanggal_lahir; ?>" required />
                 </div>
                 <?php } ?>
+
+                <?php if ($formulir->status_anak=='Ya'){ ?>
+                <div class="form-group">
+                    <label for="varchar">Status Anak <?php echo form_error('status_anak') ?></label>
+                <?php if ($button=="Tambah") { ?>     
+                    <select type="text" class="form-control" name="status_anak" id="status_anak" placeholder="Status Anak" value="" />
+                        <option value="">Status Anak</option>
+                        <option value="Anak Kandung">Anak Kandung</option>
+                        <option value="Anak Angkat">Anak Tiri</option>
+                        <option value="Anak Angkat">Anak Angkat</option>
+                    </select>
+                <?php } else { ?>
+                    <select type="text" class="form-control" name="status_anak" id="status_anak" placeholder="Status Anak" value="" />
+                        <option value="<?php echo $peserta->status_anak; ?>"><?php echo $peserta->status_anak; ?></option>
+                        <option value="">Status Anak</option>
+                        <option value="Anak Kandung">Anak Kandung</option>
+                        <option value="Anak Angkat">Anak Tiri</option>
+                        <option value="Anak Angkat">Anak Angkat</option>
+                    </select>                    
+                <?php } ?>    
+                </div>
+                <?php } else { ?>
+                    <input type="hidden" class="form-control" name="status_anak" id="status_anak" />
+                <?php } ?>
+
                 <?php if ($formulir->no_registrasi_akta_lahir=='Ya'){ ?>
                 <div class="form-group">
                     <label for="varchar">No Registrasi Akta Lahir <?php echo form_error('no_registrasi_akta_lahir') ?></label>
