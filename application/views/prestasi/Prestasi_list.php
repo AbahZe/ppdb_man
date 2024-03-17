@@ -17,6 +17,7 @@
                     <label for="varchar">Tingkat <span style="color:red;">*</span> <?php echo form_error('tingkat') ?></label>
                     <select type="text" class="form-control" name="tingkat" id="tingkat" placeholder="Tingkat" value="" required/>
                         <option value="">Pilih Tingkat</option>
+                        <option value="Kelas">Kelas</option>
                         <option value="Sekolah">Sekolah</option>
                         <option value="Kecamatan">Kecamatan</option>
                         <option value="Kabupaten">Kabupaten</option>
